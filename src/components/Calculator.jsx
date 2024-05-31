@@ -79,7 +79,10 @@ const Calculator = () => {
           min={1}
           type="number"
           value={num1}
-          onChange={(e) => setNum1(e.target.value)}
+          onChange={(e) => {
+            setNum1(e.target.value);
+            calculate(op);
+          }}
         />
         <select
           value={op}
@@ -100,7 +103,10 @@ const Calculator = () => {
           type="number"
           value={num2}
           min={1}
-          onChange={(e) => setNum2(e.target.value)}
+          onChange={(e) => {
+            setNum2(e.target.value);
+            calculate(op);
+          }}
         />
         <button
           type="button"
