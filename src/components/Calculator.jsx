@@ -123,7 +123,7 @@ const Calculator = () => {
         {num1Digits?.length > 0 &&
           num2Digits?.length > 0 &&
           answerDigits?.length > 0 && (
-            <div className="w-full lg:w-1/2">
+            <div className="w-full">
               <div className="flex gap-2 items-center justify-end">
                 {num1Digits?.map((num, index) =>
                   isNaN(num) ? (
