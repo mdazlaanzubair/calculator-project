@@ -35,7 +35,6 @@ const Calculator = () => {
         const xElements = Array(index)
           .fill()
           .map((_) => "X");
-        console.log("index", index);
         result.push([...row, ...xElements]);
       });
 
